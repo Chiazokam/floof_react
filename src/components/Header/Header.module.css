@@ -1,0 +1,24 @@
+.fixed_header {
+    width: 100%;
+    position: fixed;        
+    padding: 10px 0;
+    height: 100px;
+    color: #fff;
+    top: 0;
+}
+
+.img_logo {
+    padding: 2rem;
+    display: inline;
+}
+
+.header_text {
+    float: right;
+}
+
+.img_arrow_right {
+    display: inline;
+    width: 10px;
+    height: 10px;
+    float: right;
+}
