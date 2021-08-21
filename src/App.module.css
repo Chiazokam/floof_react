@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #fff; 
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: #E1E5EB; 
+}
+ 
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: #fff; 
+  border-radius: 30px;
+}

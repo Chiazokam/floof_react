@@ -1,11 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
+import Landing from './components/Landing/Landing';
+import './App.module.css';
 
 function App() {
   return (
-    <div className="App">
- 
-    </div>
+    <Landing />
   );
 }
 

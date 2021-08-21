@@ -1,0 +1,29 @@
+.fixed_header {
+    width: 100%;
+    position: relative;        
+    padding: 10px 0;
+    height: 100px;
+    color: #fff;
+    top: 0;
+}
+
+.img_logo {
+    padding: 2rem 3rem;
+    display: inline;
+}
+
+.right_header {
+    float: right;
+    cursor: pointer;
+    margin: 2rem 3rem 0 0;
+}
+
+.header_text {
+    margin-right: 0.2rem;
+    font-size: 15px;
+}
+
+.img_arrow_right {
+    width: 14px;
+    height: 14px;
+}

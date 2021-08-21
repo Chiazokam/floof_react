@@ -1,0 +1,10 @@
+.background {
+    background-color: #045Ac1;
+    position: absolute;
+    height: 1024px;
+    max-height: 1024px;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
