@@ -1,6 +1,6 @@
 .fixed_header {
     width: 100%;
-    position: fixed;        
+    position: relative;        
     padding: 10px 0;
     height: 100px;
     color: #fff;
@@ -8,17 +8,22 @@
 }
 
 .img_logo {
-    padding: 2rem;
+    padding: 2rem 3rem;
     display: inline;
+}
+
+.right_header {
+    float: right;
+    cursor: pointer;
+    margin: 2rem 3rem 0 0;
 }
 
 .header_text {
-    float: right;
+    margin-right: 0.2rem;
+    font-size: 15px;
 }
 
 .img_arrow_right {
-    display: inline;
-    width: 10px;
-    height: 10px;
-    float: right;
+    width: 14px;
+    height: 14px;
 }

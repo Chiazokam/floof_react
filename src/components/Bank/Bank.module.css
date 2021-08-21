@@ -1,0 +1,44 @@
+.bank_list_container {
+    height: auto;
+    padding: 10px 0;
+}
+
+.bank_list {
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 2px;
+    padding: 20px;
+    height: 549px;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bank_card {
+    display: flex;
+    margin: 7px 0 -4px;
+}
+
+.bank_logo {
+    flex: 1;
+}
+
+.bank_name {
+    flex: 7;
+    margin-top: 4px;
+}
+
+.chevron {
+    flex: 1;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}

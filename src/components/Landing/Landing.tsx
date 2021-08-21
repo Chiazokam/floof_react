@@ -1,14 +1,13 @@
-import React, { Fragment } from 'react';
-import bgImage from '../../assets/images/background_image.png';
+import React from 'react';
 import Header from '../Header/Header';
+import LandingPanel from '../LandingPanel/LandingPanel';
 import styles from './Landing.module.css';
 
 const Landing = () => (
-  <>
-    <img className={styles.bg_img} src={bgImage} alt="Background Image" />
+  <div className={styles.background}>
     <Header />
-    <div className={styles.welcome_text}>Give Floof access to your financial data</div>
-  </>
+    <LandingPanel />
+  </div>
 );
 
 export default Landing;

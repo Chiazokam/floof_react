@@ -1,4 +1,4 @@
-export type BankType = {
+type BankType = {
     id: string;
     name: string;
     logo: string;
