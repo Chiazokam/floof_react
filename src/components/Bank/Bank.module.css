@@ -42,3 +42,42 @@
     height: 1px;
     background-color: #fff;
 }
+
+.accordion_wrapper {
+    margin: 10px 0 24px 0;
+}
+
+.list_heading {
+    color: #606060;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.access_list {
+    margin: 5px 0 0 29px
+}
+
+.access_list_item {
+    list-style-image: url(../../assets/images/check.png);
+    color: #3F3F3F;
+    font-size: 12px;
+}
+
+.access_list_item::marker {
+    font-size: 6px;
+}
+
+.more_info_button {
+    background-color: #0055BA;
+    padding: 11px 17px 11px 17px;
+    border: none;
+    border-radius: 8.5px;
+    color: #fff;
+    float: right;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.more_info_button:focus {
+    outline: none;
+}

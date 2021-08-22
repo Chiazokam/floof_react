@@ -1,21 +1,20 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
+import AccordionDropDown from './AccordionDropDown';
 import chevronDown from '../../assets/images/chevron-down.png';
 import divider from '../../assets/images/divider.png';
 import styles from './Bank.module.css';
 
 interface BankProps {
     bank: BankType
+    activeTab: string;
+    toggleAccordion: (id: string) => void;
 }
 
-const Banks = ({ bank }: BankProps) => {
-  const { logo, name } = bank;
-  //   const
+const Banks = ({ bank, activeTab, toggleAccordion }: BankProps) => {
+  const { id, logo, name } = bank;
 
-  //   const toggleAccordion = (id: string) => {
-
-  //   };
   return (
     <>
       <div className={styles.bank_card}>
@@ -26,10 +25,16 @@ const Banks = ({ bank }: BankProps) => {
           {name}
         </div>
         <div className={styles.chevron}>
-          <img src={chevronDown} alt="chevron" />
+          <img src={chevronDown} alt="chevron" onClick={() => toggleAccordion(id)} />
         </div>
       </div>
       <img className={styles.divider} src={divider} alt="divider" />
+      {activeTab === id && (
+      <>
+        <AccordionDropDown />
+        <img className={styles.divider} src={divider} alt="divider" />
+      </>
+      )}
     </>
   );
 };
