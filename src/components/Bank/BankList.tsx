@@ -1,14 +1,9 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import { useQuery } from 'react-query';
 import Bank from './Bank';
 import Loader from '../Loader/Loader';
+import fetchBanks from '../../utils/fetchBanks';
 import styles from './Bank.module.css';
-
-const fetchBanks = async (query: string | null) => {
-  const { data } = await axios.get(`https://floof-backend.herokuapp.com/api/v1/banks${query ? `?search=${query}` : ''}`);
-  return data;
-};
 
 interface BankListProps {
   searchValue: string | null;
