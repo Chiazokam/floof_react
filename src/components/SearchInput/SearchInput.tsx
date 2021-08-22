@@ -1,32 +1,24 @@
 import React from 'react';
-import 'antd/dist/antd.css';
-import { Input } from 'antd';
-import { SearchOutlined } from '@ant-design/icons';
+import OutlinedInput from '@material-ui/core/OutlinedInput';
+import FormControl from '@material-ui/core/FormControl';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import search from '../../assets/images/search.png';
 import styles from './SearchInput.module.css';
 
 interface SearchInputProps {
   handleChange: React.ChangeEventHandler<HTMLInputElement>
 }
 
-const prefix = (
-  <SearchOutlined
-    style={{
-      fontSize: 16,
-      color: '#1890ff',
-    }}
-  />
-);
-
 const SearchInput = ({ handleChange }: SearchInputProps) => (
-  <div className={styles.input_wrapper}>
-    <Input
+  <FormControl fullWidth variant="outlined" className={styles.form_control}>
+    <OutlinedInput
       className={styles.search_input}
       placeholder="Search for your bank"
-      size="large"
-      prefix={prefix}
       onChange={handleChange}
+      startAdornment={<InputAdornment position="start"><img src={search} alt="search" /></InputAdornment>}
     />
-  </div>
+  </FormControl>
+
 );
 
 export default SearchInput;
