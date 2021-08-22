@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import SearchInput from '../SearchInput/SearchInput';
-import BankList from '../Bank/BankList';
+import BankList from '../../containers/BankList/BankList';
 import styles from './LandingPanel.module.css';
 
 const RighPanel = () => {
   const [searchValue, setSearchValue] = useState<string | null>(null);
-  const handleChange = (value: string) => {
-    setSearchValue(value);
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchValue(event.target.value);
   };
 
   return (
