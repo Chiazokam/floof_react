@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useQuery } from 'react-query';
-import Bank from './Bank';
-import Loader from '../Loader/Loader';
+import Bank from '../../components/Bank/Bank';
+import Loader from '../../components/Loader/Loader';
 import fetchBanks from '../../utils/fetchBanks';
-import styles from './Bank.module.css';
+import styles from './BankList.module.css';
 
 interface BankListProps {
   searchValue: string | null;
