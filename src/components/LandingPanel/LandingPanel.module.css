@@ -49,3 +49,9 @@
     font-size: 20px;
     margin-bottom: 27px;
 }
+
+.powered_by {
+    position: relative;
+    z-index: 26;
+    top: 60px;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SearchInput from '../SearchInput/SearchInput';
 import BankList from '../../containers/BankList/BankList';
+import poweredBy from '../../assets/images/powered_by.png';
 import styles from './LandingPanel.module.css';
 
 const RighPanel = () => {
@@ -17,6 +18,7 @@ const RighPanel = () => {
         <SearchInput handleChange={handleChange} />
         <BankList searchValue={searchValue} />
       </div>
+      <img className={styles.powered_by} src={poweredBy} alt="powered by" />
     </section>
   );
 };
