@@ -3,6 +3,7 @@
 import React from 'react';
 import AccordionDropDown from './AccordionDropDown';
 import chevronDown from '../../assets/images/chevron-down.png';
+import chevronUp from '../../assets/images/chevron-up.png';
 import divider from '../../assets/images/divider.png';
 import styles from './Bank.module.css';
 
@@ -25,7 +26,9 @@ const Banks = ({ bank, activeTab, toggleAccordion }: BankProps) => {
           {name}
         </div>
         <div className={styles.chevron}>
-          <img src={chevronDown} alt="chevron" onClick={() => toggleAccordion(id)} />
+          {activeTab === id
+            ? (<img src={chevronUp} alt="chevron" onClick={() => toggleAccordion('')} />)
+            : (<img src={chevronDown} alt="chevron" onClick={() => toggleAccordion(id)} />) }
         </div>
       </div>
       <img className={styles.divider} src={divider} alt="divider" />
